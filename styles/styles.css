@@ -20,5 +20,11 @@
 
 .boton
     {
-    
+    background-color: blueviolet;
+    }
+
+.boton:hover
+    {
+    border-radius: 5px;
+    box-shadow: 0 10 10 0 black;
     }
