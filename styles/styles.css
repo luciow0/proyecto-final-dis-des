@@ -1,30 +1,130 @@
-.nav
+html
     {
-    width: 100%;
-    height: 15%;
-    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    }
+
+a
+    {
+    text-decoration: none;
+    color: black;
+    }
+
+header
+    {
     top: 0;
     left: 0;
-    background-color: red;
-    justify-content: space-around;
-    }
-    
-    
-
-.footer
-    {
-    color: #E5CFF7 ;
     width: 100%;
-    height: 50%;
+    height: auto;
     }
+
+main
+    {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 80%;
+
+    }
+
+footer
+    {
+    background-color: #E5CFF7 ;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    }
+
+body
+    {
+    margin-top: 0;
+    margin-left: 0;
+    
+    }
+
+#body
+    {
+    background-image: url(img/rocha.jpg);
+    
+    }
+
+.text
+    {
+    color: #000;
+    font-size: 140%;
+    flex-shrink: 0;
+    text-align: justify;
+    }
+
+.nav
+    {
+    width: 90%;
+    height: 15%;
+    display: flex;
+    background-color: #5B0888;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 5%;
+    margin-top: 2%;
+    opacity: 0.7;
+    border-radius: 1em;
+    
+    }
+
+#img_logo
+    {
+    width: 20%;
+    border-radius: 50%;
+    transition: ease 0.5s;
+    }
+
+#img_logo:hover
+    {
+    transition: ease 0.5s;
+    transform: scale(1.5);
+    }
+
+
 
 .boton
     {
-    background-color: blueviolet;
+    color: black;
+    font-size: 150%;
+    text-decoration: none;
+    padding: 1%;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 0.5s;
+    
     }
+
 
 .boton:hover
     {
-    border-radius: 5px;
+    border-radius: 3em;
     box-shadow: 0 10 10 0 black;
+    background-color: #9D76C1;
+    }
+
+
+
+.portada
+    {
+    width: 70%;
+    background-color: #9D76C1;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 6%;
+    border-radius: 2em;
+    padding: 1%;
     }
