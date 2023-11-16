@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Agrega estilos adicionales aquí si es necesario */
+        #foto_chala {
+            cursor: pointer;
+            transition: ease-in-out 0.3s;
+        }
+
+        #foto_chala:hover {
+            transform: scale(1.1);
+            border-radius: 2em;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 999;
+        }
+
+        #overlay p {
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tu código HTML actual -->
+
+    <main class="main_1">
+        <div id="overlay">
+            <img src="img/chala.jpg" alt="imagen rocha" id="enlarged_foto_chala">
+            <p class="textvenimain">Texto que aparece al ampliar la imagen</p>
+        </div>
+        <img src="img/chala.jpg" alt="imagen rocha" id="foto_chala" onclick="enlargeImage()">
+        <div class="venimain">
+            <p class="textvenimain">Veni con tu familia o amigos <br> al espacio de recreación artística de El Rocha <br> donde podrás ver las mejores bandas locales y disfrutar de una noche llena de música.</p>
+        </div>
+    </main>
+
+    <script>
+        function enlargeImage() {
+            // Obtén la referencia a los elementos
+            var overlay = document.getElementById('overlay');
+            var enlargedFotoChala = document.getElementById('enlarged_foto_chala');
+
+            // Muestra el overlay
+            overlay.style.display = 'flex';
+
+            // Configura la imagen ampliada
+            enlargedFotoChala.src = 'img/chala.jpg';
+            enlargedFotoChala.alt = 'imagen rocha ampliada';
+
+            // Puedes personalizar el texto según tus necesidades
+            overlay.querySelector('p').innerText = 'Texto que aparece al ampliar la imagen';
+        }
+
+        // Cierra el overlay al hacer clic fuera de la imagen
+        window.onclick = function(event) {
+            var overlay = document.getElementById('overlay');
+            if (event.target === overlay) {
+                overlay.style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>

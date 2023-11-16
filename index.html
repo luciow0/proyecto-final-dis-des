@@ -4,47 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El rocha - home</title>
-    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body id="body">
     
     <header>
-        <nav class="nav">
-            <div><li><a href="index.html"><img src="img/logo pedorro.png" alt="Logo" id="img_logo"></a></li></div>
-            <div class="boton"><li><a href="index.html">Inicio</a></li></div>
-            <div class="boton"><li><a href="quienes.html">Quiénes somos</a></li></div>
-            <div class="boton"><li><a href="eventos.html">Eventos</a></li></div>
-            <div class="boton"><li><a href="colabora.html">Colabora</a></li></div>
+        <button id="abrir" class="abrir-menu">abrir</button>
+        <nav>
+            <div id="menu" class="menu">
+                <button id="cerrar" class="cerrar-menu">cerrar</button>
+                <ul class="nav-list">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Colabora</a></li>
+                </ul>
+            </div>
+            <div class="nav">
+                <div><li><a href="index.html"><img src="img/logo pedorro.png" alt="Logo" id="img_logo"></a></li></div>
+                <div class="boton"><li><a href="index.html">Inicio</a></li></div>
+                <div class="boton"><li><a href="quienes.html">Quiénes somos</a></li></div>
+                <div class="boton"><li><a href="eventos.html">Eventos</a></li></div>
+                <div class="boton"><li><a href="colabora.html">Colabora</a></li></div> 
+            </div>
         </nav>
     </header>
 
     <section id="seccion">
         <img src="img/perucho.jpg" alt="foto rocha" id="foto_roch">
         <div class="portada">
-        <p class= "text">El presente proyecto tiene como fin presentar la importancia de establecer un Área Natural Protegida en la localidad de Villa Elisa, Entre Ríos. Los principales motivos que sustentan la consideración de esta temática se asocian con la protección de los ecosistemas y sus componentes.</p>
+            <p class= "text">El presente proyecto tiene como fin presentar la importancia de establecer un Área Natural Protegida en la localidad de Villa Elisa, Entre Ríos. Los principales motivos que sustentan la consideración de esta temática se asocian con la protección de los ecosistemas y sus componentes.</p>
         </div>
     </section>
 
-    <main>
-               
-        <h2>meme</h2>
-        <h3>lolo</h3>
-        <h1>eso es asi</h1>
-        <h1>cuantos <br> terminos <br> hace <br> falta <br> eso <br> jaj <br> no <br> ja <br> ja <br> ja <br></h1>
+    <main class="main_1">
+        <img src="img/foto como la gente 3.jpg" alt="imagen rocha" id="foto_roch2">
+        <p class="texto_main_1">¿Por que una ANP en Villa Elisa?<br>
+
+            La poblacion manifiesta interés por proteger los ambientes naturales<br>
+            
+            Los ecosistemas locales revisten importancia cientifica<br>
+            
+            Se necesita controlar el avance de la frontera agrícola, procurando acciones sostenibles</p>
 
     </main>
 
     <footer>
 
         <div class="footer">
-            
-            <img id="pnguade" src="img/uade penege.png" alt="logo uade">
-            
+
+            <div class="integrantes">
+                <ul id="integrantes">
+                    <li>Buno Roude</li>
+                    <li>Lucio Claa</li>
+                </ul>
+            </div>
+
+            <div class="p">    
+                <p>Trabajo grupal | Materia Diseño y Desarrollo Web</p>
+            </div>
+
+            <div class="sitio">
+                <a href="https://www.youtube.com/" class="afooter"><p>Sitio web del equipo</p></a>
+            </div>
+        
+            <div class="imagenfooter">
+                <img id="pnguade" src="img/uade penege.png" alt="logo uade">
+            </div>
+
+
         </div>
 
     </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>
