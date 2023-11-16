@@ -1,12 +1,12 @@
-const menu = document.querySelector("#nav");
+const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener('click', () => {
-  menu.classList.add("visible");
+  nav.classList.add("visible");
 });
 
 
 cerrar.addEventListener('click', () => {
-  menu.classList.remove("visible");
+  nav.classList.remove("visible");
 });
