@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <header>
-        <nav class="nav">
+        <button id="abrir" class="abrir-menu">abrir</button>
+        
+        <nav id="nav" class="nav">
             <div><li><a href="index.html"><img src="img/logo pedorro.png" alt="Logo" id="img_logo"></a></li></div>
-            <div class="boton"><li><a href="index.html">Inicio</a></li></div>
-            <div class="boton"><li><a href="quienes.html">Quiénes somos</a></li></div>
-            <div class="boton"><li><a href="eventos.html">Eventos</a></li></div>
-            <div class="boton"><li><a href="colabora.html">Colabora</a></li></div>
+            <button id="cerrar" class="cerrar-menu">cerrar</button>
+            <ul class="nav-list">
+                <div class="boton"><li><a href="index.html">Inicio</a></li></div>
+                <div class="boton"><li><a href="quienes.html">Quiénes somos</a></li></div>
+                <div class="boton"><li><a href="eventos.html">Eventos</a></li></div>
+                <div class="boton"><li><a href="colabora.html">Colabora</a></li></div>
+            </ul>
         </nav>
     </header>
 
@@ -29,14 +34,17 @@
     
     <img src="img/chala.jpg" alt="imagen chala" id="fotochala">
     <div class="venimain">
-    <p class="textvenimain">Veni con tu familia o amigos <br> al espacio de recreacion artistica de El Rocha <br> donde podras ver las mejores bandas locales y drisfrutar de una noche llena de putas y drogas</p>
+    <p class="textvenimain">Veni con tu familia o amigos <br>
+         al espacio de recreacion artistica de El Rocha <br> 
+         donde podras ver las mejores bandas locales y 
+         drisfrutar de una noche llena de putas y drogas
+        </p>
     </div>
 </main>
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
-            <img src="img/uade penege.png" alt="Logo uade">
-            <span>Materia Diseño y Desarrolo Web</span>
+            <a href="https://www.uade.edu.ar/"><img src="img/uade penege.png" alt="Logo uade"></a>
         </div>
         <div class="footer-links">
             <ul>
@@ -44,6 +52,7 @@
                 <li><a href="quienes.html">Quienes somos</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="colabora.html">Colabora</a></li>
+                <li>Materia Diseño y Desarrollo Web</li>
             </ul>
         </div>
         <div class="footer-contact">
@@ -53,6 +62,7 @@
         </div>
     </div>
 </footer>
-    
+
+<script src="script.js"></script>
 </body>
 </html>

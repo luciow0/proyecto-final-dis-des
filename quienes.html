@@ -9,42 +9,78 @@
 <body>
 
     <header>
-        <nav class="nav">
+        <button id="abrir" class="abrir-menu">abrir</button>
+        
+        <nav id="nav" class="nav">
             <div><li><a href="index.html"><img src="img/logo pedorro.png" alt="Logo" id="img_logo"></a></li></div>
-            <div class="boton"><li><a href="index.html">Inicio</a></li></div>
-            <div class="boton"><li><a href="quienes.html">Quiénes somos</a></li></div>
-            <div class="boton"><li><a href="eventos.html">Eventos</a></li></div>
-            <div class="boton"><li><a href="colabora.html">Colabora</a></li></div>
+            <button id="cerrar" class="cerrar-menu">cerrar</button>
+            <ul class="nav-list">
+                <div class="boton"><li><a href="index.html">Inicio</a></li></div>
+                <div class="boton"><li><a href="quienes.html">Quiénes somos</a></li></div>
+                <div class="boton"><li><a href="eventos.html">Eventos</a></li></div>
+                <div class="boton"><li><a href="colabora.html">Colabora</a></li></div>
+            </ul>
         </nav>
     </header>
 
-<main class="infor2">
-    
-    <div class="img1"><a href="https://brunorouo.github.io/CV/" target="_blank"><img src="img/cv.jpg" alt="Foto Bruno Roude" id="fotoB"></a><p>Bruno Roude</p></div>
-    <div class="img2"><a href="https://Luciow0.github.io" target="_blank"><img src="img/lucass.jpg" alt="Foto Lucio Claa" id="fotoL"></a><p>Lucio Claa</p></div>
+    <section id="quienes-somos">
+        <h2>Quiénes Somos</h2>
 
-</main>
+        <article class="mision">
+            <h3>Nuestra Misión</h3>
+            <p>En la búsqueda de un equilibrio sostenible entre la naturaleza y la sociedad, surge El Rocha ONG con el objetivo claro de establecer un Área Natural Protegida en la pintoresca localidad de Villa Elisa. Nos esforzamos por crear un espacio donde la flora y fauna puedan prosperar sin la interferencia perjudicial del ser humano.</p>
+        </article>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="img/uade penege.png" alt="Logo uade">
-            <span>Materia Diseño y Desarrolo Web</span>
+        <article class="objetivos">
+            <h3>Objetivos del Proyecto</h3>
+            <p><strong>Área Natural Protegida en Villa Elisa:</strong> Buscamos establecer un refugio para la vida silvestre, un oasis donde la biodiversidad pueda florecer sin amenazas externas.</p>
+            <p><strong>Desarrollo Sostenible:</strong> Entendemos que proteger nuestro entorno es clave para el desarrollo sostenible. Queremos no solo preservar el equilibrio ecológico sino también fomentar nuevas actividades económicas y socioculturales en la localidad.</p>
+        </article>
+
+        <article class="contexto">
+            <h3>Contexto Ambiental</h3>
+            <p>El enfoque que hemos adoptado se basa en un análisis profundo de las Áreas Naturales Protegidas. Observamos la necesidad urgente de establecer normativas que protejan nuestros ecosistemas frente a la expansión de la frontera agrícola y otros desequilibrios ambientales.</p>
+        </article>
+
+        <article class="desafios">
+            <h3>Desafíos Actuales</h3>
+            <p><strong>Modelo Productivo Actual:</strong> Reconocemos que el modelo productivo actual ha generado desequilibrios ambientales significativos. Estamos comprometidos a revertir estos efectos negativos.</p>
+            <p><strong>Impacto en Sociedades:</strong> Comprendemos que estos desequilibrios afectan no solo al medio ambiente, sino también a las comunidades locales. Buscamos soluciones que beneficien a ambas partes.</p>
+        </article>
+
+        <article class="vision">
+            <h3>Visión a Futuro</h3>
+            <p>Creemos en un futuro donde la conservación ambiental y el desarrollo humano armonicen. A través de propuestas educativas innovadoras y transformadoras, buscamos cambiar la narrativa y construir una coexistencia sostenible entre la naturaleza y la sociedad.</p>
+            <p>Únete a nosotros en esta emocionante jornada hacia un equilibrio sostenible. Juntos, podemos construir un futuro donde la naturaleza florezca y las comunidades prosperen.</p>
+        </article>
+
+        <img src="img/iglesia.jpg" alt="iglesia villa elisa" class="imagen">
+        <img src="img/el rocha aereo.jpg" alt="el rocha desde el cielo" class="imagen">
+        <img src="img/mapa el rocha.jpg" alt="mapa el rocha" class="imagen">
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="https://www.uade.edu.ar/"><img src="img/uade penege.png" alt="Logo uade"></a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes.html">Quienes somos</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="colabora.html">Colabora</a></li>
+                    <li>Materia Diseño y Desarrollo Web</li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>Dirección: Calle Ejemplo, Ciudad</p>
+                <p>Email: info@empresa.com</p>
+                <p>Teléfono: +123 456 789</p>
+            </div>
         </div>
-        <div class="footer-links">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="quienes.html">Quienes somos</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="colabora.html">Colabora</a></li>
-            </ul>
-        </div>
-        <div class="footer-contact">
-            <p>Dirección: Calle Ejemplo, Ciudad</p>
-            <p>Email: info@empresa.com</p>
-            <p>Teléfono: +123 456 789</p>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
