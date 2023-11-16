@@ -139,13 +139,32 @@ body
     margin-top: 9%;
     margin-left: 10%;
     }
-  
+
+.foto-item
+    {
+    padding: 2%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: 3em;
+    height: 45%;
+    }
+
+    /*el muy negro de mierda (img) toma la propiedad width del puto padre, y me rompe las pelotas
+    pero, el height lo toma del puto children, entonces, por que no se pone de acuerdo 
+    el hijo de mil puta, increible (.foto-item(class)) (.fotos(padre))*/
+
 .main_1
     {
     padding: 1%;
     display: flex;
     gap: 5rem;
     }
+
+.fotos{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
 
 .main_2
     {
@@ -184,7 +203,6 @@ body
     display: flex;
     align-items: center;
     flex-direction: column;
-    
     }
 
 .img2
@@ -202,9 +220,12 @@ body
     text-align: center;
   
     }
-.invitamos{
+
+.invitamos
+    {
     text-align: center;
-}
+    }
+
 #fotoB
     {
     border-radius: 50em;
@@ -252,6 +273,13 @@ body
     margin-top: 0%;
     }   
 
+#seccioncolabora
+    {
+    width: 100%;
+    position: relative;
+    margin-top: 10%;
+    }  
+
 #foto_roch
     {
     width: 100%;
@@ -280,6 +308,7 @@ body
     margin-left: 2%;
     position: relative;
     }
+
 #fotosumate
     {
     width: 45%;
@@ -295,7 +324,7 @@ body
     
 #fotochala:hover
     {
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgb(158, 152, 152);
     transform: scale(1.1);
     border-radius: 2em;
     }
@@ -308,13 +337,13 @@ body
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Color y opacidad de la capa de superposición */
+    background: rgba(0, 0, 0, 0.5); 
     border-radius: 1em;
     }
 
 #fotochala:hover + .venimain 
     {
-    opacity: 1; /* Hace que el texto sea visible al pasar el cursor sobre la imagen */
+    opacity: 1; 
     }
 
 #foto_roch2:hover
@@ -373,7 +402,10 @@ body
     display: none;
     }
     
-            
+
+
+    /*QUERY MENÚ HAMBURGUESA*/      
+
     @media screen and (max-width: 700px) {
         header
         {
@@ -430,12 +462,120 @@ body
         {
         display: block;
         }
-    
-
-    
     }
 
-        /*FOOTER*/
+
+
+/*QUERY RESPONSIVE*/
+
+    @media screen and (max-width: 700px) {
+        header {
+          display: flex;
+          background-color:  rgba(91, 8, 136, 0.9);
+          justify-content: center;
+          align-items: center;
+        }
+      
+        .nav {
+          margin-top: 0;
+          display: flex;
+          flex-direction: column;
+          opacity: 0;
+          visibility: hidden;
+          justify-content: center;
+          position: absolute;
+          box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+          top: 0;
+          width: 100%;
+          height: auto;
+          align-items: center;
+          margin-left: 0;
+        }
+      
+        .nav-list {
+          flex-direction: column;
+          padding: 0;
+        }
+      
+        .boton {
+          border-radius: 0;
+          background-color: rgba(0, 0, 0, .0);
+          padding: 3%;
+        }
+      
+        .boton:hover {
+          border-radius: 1em;
+        }
+      
+        .nav.visible {
+          opacity: 1;
+          visibility: visible;
+        }
+      
+        .abrir-menu,
+        .cerrar-menu {
+          display: block;
+        }
+
+        .main_1
+            {
+            flex-direction: column;
+            align-items: center;
+            }
+
+        .main_2
+            {
+            flex-direction: column;
+            align-items: center;
+            }
+
+        .texto_main_1
+            {
+            margin: 0;
+            margin-bottom: 1%;
+            }
+
+        #foto_roch2
+            {
+            margin-top: 4%;
+            width: 80%;
+            }
+       
+        .textvenimain
+            {
+            font-size: 200%;
+            margin-top: 0;
+            text-align: center;
+            }
+
+        .venimain
+            {
+            margin: 0;
+            }
+
+        .footer-links ul
+            {
+            display: flex;
+            flex-direction: column;
+            }
+
+        #fotochala
+            {
+            margin-top: 3%;
+            width: 60%;
+            }
+
+        #fotosumate
+            {
+            width: 80%;
+            }
+      }
+
+
+
+
+
+/*FOOTER*/
 
 .footer-container 
     {
@@ -484,7 +624,8 @@ footer
     }
 
 
-    /*FORMULARIO*/
+
+/*FORMULARIO*/
     
 #formulario-section 
     {
@@ -526,7 +667,8 @@ button:hover
     }
 
 
-/* QUINES SOMOS*/
+
+    /* QUINES SOMOS*/
 
 #quienes-somos {
     max-width: 80%;
